@@ -10,7 +10,12 @@ defmodule DoubleCheck.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps,
-     docs: [extras: ["README.md"]]
+
+     # Docs
+     name: "DoubleCheck",
+     source_url: "https://github.com/rubberband75/DoubleCheck",
+     docs: [main: "DoubleCheck", # The main page in the docs
+            extras: ["README.md"]]
      ]
   end
 
