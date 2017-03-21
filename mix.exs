@@ -5,11 +5,11 @@ defmodule DoubleCheck.Mixfile do
     [app: :double_check,
      version: "0.1.0",
      elixir: "~> 1.3",
-     description: description,
-     package: package,
+     description: description(),
+     package: package(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps,
+     deps: deps(),
 
      # Docs
      name: "DoubleCheck",
