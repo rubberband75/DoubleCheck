@@ -163,11 +163,10 @@ defmodule DoubleCheck do
   Generates a list of tuples, reperesnting each unique pair from a given list of objects.
 
   ## Examples
-
       iex> DoubleCheck.get_pairs(['A', 'B', 'C'])
       [{'A', 'B'}, {'A', 'C'}, {'B', 'C'}]
-
   """
+  @spec get_pairs([any]) :: [{any, any}]
   def get_pairs(list) do
     r = Enum.reduce(list, {1, list, []}, fn
       x, acc ->
